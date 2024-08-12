@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background: #575757;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .blog-post {
+            background: #f4f4f4;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-content {
+            padding: 15px;
+        }
+
+        .post-content h2 {
+            margin-top: 0;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .main-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="blog-post">
+            <img src="https://via.placeholder.com/600x300" alt="Blog Post Image">
+            <div class="post-content">
+                <h2>Blog Post Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia, nisl a laoreet auctor, justo erat dictum lacus, at ultricies nisi sem sit amet justo.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </section>
+
+        <section class="blog-post">
+            <img src="https://via.placeholder.com/600x300" alt="Blog Post Image">
+            <div class="post-content">
+                <h2>Another Blog Post</h2>
+                <p>Nullam vitae sapien nec velit dapibus mollis. Integer ac ipsum non dolor accumsan sodales. Ut convallis vel leo et blandit.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
