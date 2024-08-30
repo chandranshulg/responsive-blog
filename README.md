@@ -19,7 +19,7 @@ The Simple Responsive Blog project showcases a minimalistic blog layout that can
 
 ## Live Demo
 
-Check out the live demo of the project [here](https://chandranshulg.github.io/responsive-blog).
+Check out the live demo of the project :  https://chandranshulg.github.io/responsive-blog
 
 ## License
 
